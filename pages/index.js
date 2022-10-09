@@ -22,6 +22,12 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
+          <a href="localhost:3000/maps" className={styles.card}>
+            <h2>Maps &rarr;</h2>
+            <p>Lets play with leaflet for a while.</p>
+          </a>
+
+          {/*
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -49,6 +55,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          */}
         </div>
       </main>
 
