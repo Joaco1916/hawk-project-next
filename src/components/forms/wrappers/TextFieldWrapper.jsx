@@ -6,7 +6,14 @@ const TextFieldWrapper = ({
     setFormState 
 }) => {
     const handleChange = (e) => {
-        console.log(e.target.value)
+        const newState = formState.map( (input) => {
+            let temporal = input
+            if( input.name == definition.name){
+                temporal = {...input, value: e.target.value}
+            }
+            return temporal
+        })
+        setFormState(newState)
     }
 
     return(

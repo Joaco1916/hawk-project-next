@@ -9,7 +9,7 @@ const FormFromJson = () => {
 
     useEffect(() => {
         let tmpState = inputFormElements.map( (input) => {
-            //Setear un estado inicial vacio
+            return {...input.definition, value:null}
         })
         setFormState(tmpState)
     }, [])
@@ -31,7 +31,7 @@ const FormFromJson = () => {
                     )
                 }
                 </Grid>
-                <Button onSubmit={()=>{ console.log(formState)}}>Submit</Button>
+                <Button onClick={()=>{ console.log(formState)}}>Submit</Button>
             </form>
         </div>
     )
