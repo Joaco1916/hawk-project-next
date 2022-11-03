@@ -1,7 +1,18 @@
-import { MapContainer, TileLayer,Marker,Popup } from 'react-leaflet'
+//Leaflet
+import { MapContainer, TileLayer, LayersControl } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 import "leaflet-defaulticon-compatibility";
+
+//Omnivore
+import omnivore from "@mapbox/leaflet-omnivore";
+//import file from "../../utils/establecimiento-prueba.json"
+
+//Custom
+import DrawingMap from './DrawingMap';
+import BackgroundLayers from './BackgroundLayers';
+import { useEffect, useState } from 'react';
+import ShowMapData from './ShowMapData';
 import Markers from './Markers';
 
 const Map = () => {
